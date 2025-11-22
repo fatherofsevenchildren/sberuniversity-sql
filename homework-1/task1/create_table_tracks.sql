@@ -45,6 +45,7 @@ BEGIN
             WHERE lower(table_name) = ''tb_tracks''
               and lower(table_schema) = ''student08''
               and lower(constraint_type) = ''foreign key''
+              and lower(constraint_name) like ''%artist_id%''
         )
     THEN
         ALTER TABLE student08.tb_tracks ADD FOREIGN KEY (artist_id) REFERENCES student08.tb_artists(artist_id);
@@ -59,6 +60,7 @@ BEGIN
             WHERE lower(table_name) = ''tb_tracks''
               and lower(table_schema) = ''student08''
               and lower(constraint_type) = ''foreign key''
+              and lower(constraint_name) like ''%album_id%''
         )
     THEN
         ALTER TABLE student08.tb_tracks ADD FOREIGN KEY (album_id) REFERENCES student08.tb_albums(album_id);
@@ -73,6 +75,7 @@ BEGIN
             WHERE lower(table_name) = ''tb_tracks''
               and lower(table_schema) = ''student08''
               and lower(constraint_type) = ''foreign key''
+              and lower(constraint_name) like ''%genre_id%''
         )
     THEN
         ALTER TABLE student08.tb_tracks ADD FOREIGN KEY (genre_id) REFERENCES student08.tb_genres(genre_id);

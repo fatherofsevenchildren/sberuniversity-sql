@@ -1,0 +1,6 @@
+"genre_id","album_id","track_id","title","artist_id","duration","release_year","play_count","title-2","artist_id-2","release_year-2","artist_id-3","name","country","formed_year","name-2"
+"1","1","1","Come Together","1",259,1969,"15000000","Abbey Road","1",1969,"1","The Beatles","Великобритания",1960,"рок"
+"1","2","2","Bohemian Rhapsody","2",354,1975,"25000000","A Night at the Opera","2",1975,"2","Queen","Великобритания",1970,"рок"
+"4","3","3","Get Lucky","3",248,2013,"18000000","Random Access Memories","3",2013,"3","Daft Punk","Франция",1993,"электроника"
+"1","4","4","Группа крови","4",287,1988,"12000000","Группа крови","4",1988,"4","Кино","СССР",1981,"рок"
+"5","5","5","So What","5",562,1959,"8000000","Kind of Blue","5",1959,"5","Miles Davis","США",1944,"джаз"

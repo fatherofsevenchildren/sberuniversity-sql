@@ -51,6 +51,7 @@ BEGIN
             WHERE lower(table_name) = ''tb_books''
               and lower(table_schema) = ''student08''
               and lower(constraint_type) = ''foreign key''
+              and lower(constraint_name) like ''%author_id%''
         )
     THEN
         ALTER TABLE student08.tb_books ADD FOREIGN KEY (author_id) REFERENCES student08.tb_authors(author_id);
@@ -65,6 +66,7 @@ BEGIN
             WHERE lower(table_name) = ''tb_books''
               and lower(table_schema) = ''student08''
               and lower(constraint_type) = ''foreign key''
+              and lower(constraint_name) like ''%publisher_id%''
         )
     THEN
         ALTER TABLE student08.tb_books ADD FOREIGN KEY (publisher_id) REFERENCES student08.tb_publishers(publisher_id);
@@ -79,6 +81,7 @@ BEGIN
             WHERE lower(table_name) = ''tb_books''
               and lower(table_schema) = ''student08''
               and lower(constraint_type) = ''foreign key''
+              and lower(constraint_name) like ''%genre_id%''
         )
     THEN
         ALTER TABLE student08.tb_books ADD FOREIGN KEY (genre_id) REFERENCES student08.tb_genres(genre_id);
